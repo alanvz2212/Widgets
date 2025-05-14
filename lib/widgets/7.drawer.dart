@@ -13,15 +13,41 @@ class _DrawerrState extends State<Drawerr> {
     return Scaffold(
       drawer: Drawer(
         child: Container(
-          color: Theme.of(context).primaryColor,
           child: ListView(
             children: [
               DrawerHeader(
                 padding: EdgeInsets.zero,
                 child: Container(
-                  color: Colors.green,
                   padding: EdgeInsets.all(5),
-                  child: Row(),
+                  child: Row(
+                    children: [
+                      SizedBox(width: 10),
+                      CircleAvatar(
+                        radius: 40,
+                        backgroundImage: AssetImage('assets/images/man.webp'),
+                      ),
+                      Column(
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            'Alan Varghese',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                          Text(
+                            'alanvz757@gmail.com',
+                            style: TextStyle(
+                              fontSize: 16,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ],
+                  ),
                 ),
               ),
               ListTile(
