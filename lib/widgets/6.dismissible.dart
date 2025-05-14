@@ -4,11 +4,10 @@ class Dismissiblee extends StatefulWidget {
   const Dismissiblee({super.key});
 
   @override
-  State<Dismissible> createState() => _DismissibleState();
+  State<Dismissiblee> createState() => _DismissibleeState();
 }
 
-class _DismissibleState extends State<Dismissible> {
-  List<String> myData = ['Apple', 'Orange', 'Mango'];
+class _DismissibleeState extends State<Dismissiblee> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(appBar: AppBar(title: Text('Dismissible Widget')));
