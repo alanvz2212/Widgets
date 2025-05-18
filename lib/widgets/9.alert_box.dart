@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 
 class AlertWidget extends StatefulWidget {
-  const AlertWidget({Key? key}) : super(key: key);
+  const AlertWidget({super.key});
 
   @override
+  // ignore: library_private_types_in_public_api
   _AlertWidgetState createState() => _AlertWidgetState();
 }
 
