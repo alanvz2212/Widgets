@@ -5,24 +5,80 @@ class RowAndColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var w = double.infinity;
+    var w = MediaQuery.of(context).size.width;
     var h = MediaQuery.of(context).size.height;
-
     return Scaffold(
-      appBar: AppBar(title: Text('Row and Column')),
+      appBar: AppBar(title: Text("Row And Column")),
       body: Container(
-        height: 200,
+        height: h,
         width: w,
-        color: Colors.red,
+        color: const Color.fromARGB(255, 0, 0, 0),
+
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.start,
-          crossAxisAlignment: CrossAxisAlignment.center,
+          // alignment: WrapAlignment.spaceBetween,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
+          // crossAxisAlignment: CrossAxisAlignment.end,
           children: [
-            Container(height: 100, width: 200, color: Colors.yellow),
-            Container(height: 100, width: 200, color: Colors.yellow),
-            Container(height: 100, width: 200, color: Colors.yellow),
-            Container(height: 100, width: 200, color: Colors.yellow),
-            Container(height: 100, width: 200, color: Colors.yellow),
+            Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 10,
+                    spreadRadius: 10,
+                    color: Colors.grey,
+                  ),
+                ],
+                color: const Color.fromARGB(255, 255, 255, 255),
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 10,
+                    spreadRadius: 10,
+                    color: Colors.grey,
+                  ),
+                ],
+                color: const Color.fromARGB(255, 20, 222, 87),
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 10,
+                    spreadRadius: 10,
+                    color: Colors.grey,
+                  ),
+                ],
+                color: const Color.fromARGB(255, 20, 222, 87),
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
+            Container(
+              height: 100,
+              width: 100,
+              decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    blurRadius: 10,
+                    spreadRadius: 10,
+                    color: Colors.grey,
+                  ),
+                ],
+                color: const Color.fromARGB(255, 20, 222, 87),
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
           ],
         ),
       ),

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widgets/widgets/utilted.dart';
+import 'package:widgets/widgets/2.row_and_column.dart';
 
 void main() {
   runApp(MyApp());
@@ -10,6 +10,6 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(theme: ThemeData.dark(), home: ActionSheetApp());
+    return MaterialApp(theme: ThemeData.dark(), home: RowAndColumn());
   }
 }
