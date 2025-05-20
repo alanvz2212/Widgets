@@ -1,175 +1,100 @@
 import 'package:flutter/material.dart';
 
-class Imagee extends StatefulWidget {
-  const Imagee({super.key});
+class BottomSheetWidget extends StatefulWidget {
+  const BottomSheetWidget({super.key});
 
   @override
-  State<Imagee> createState() => _ImageeState();
+  State<BottomSheetWidget> createState() => _BottomSheetWidgetState();
 }
 
-class _ImageeState extends State<Imagee> {
+class _BottomSheetWidgetState extends State<BottomSheetWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(child: DrawerHeader(child: SizedBox())),
-      appBar: AppBar(title: Text('Image Widget')),
-      body: SingleChildScrollView(
-        child: Padding(
-          padding: EdgeInsets.symmetric(horizontal: 20),
-          child: Column(
-            children: [
-              // ClipRRect(
-              ClipRRect(
-                borderRadius: BorderRadius.circular(30),
-
-                child: Container(
-                  height: 200,
-                  width: 350,
-                  color: Colors.green,
-                  child: Image.asset(
-                    'assets/images/waiting-9588284.jpg',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Container(
-                  height: 200,
-                  width: 350,
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  child: Image.asset(
-                    'assets/images/waiting-9588284.jpg',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Container(
-                  height: 200,
-                  width: 350,
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  child: Image.asset(
-                    'assets/images/waiting-9588284.jpg',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Container(
-                  height: 200,
-                  width: 350,
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  child: Image.asset(
-                    'assets/images/waiting-9588284.jpg',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Container(
-                  height: 200,
-                  width: 350,
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  child: Image.asset(
-                    'assets/images/waiting-9588284.jpg',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Container(
-                  height: 200,
-                  width: 350,
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  child: Image.asset(
-                    'assets/images/waiting-9588284.jpg',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Container(
-                  height: 200,
-                  width: 350,
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  child: Image.asset(
-                    'assets/images/waiting-9588284.jpg',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Container(
-                  height: 200,
-                  width: 350,
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  child: Image.asset(
-                    'assets/images/waiting-9588284.jpg',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-              const SizedBox(height: 10),
-              ClipRRect(
-                borderRadius: BorderRadius.circular(20),
-                child: Container(
-                  height: 200,
-                  width: 350,
-                  decoration: BoxDecoration(
-                    color: Colors.green,
-
-                    borderRadius: BorderRadius.circular(30),
-                  ),
-                  child: Image.asset(
-                    'assets/images/waiting-9588284.jpg',
-                    fit: BoxFit.cover,
-                  ),
-                ),
-              ),
-            ],
+      appBar: AppBar(title: Text('Hello Alan')),
+      body: Center(
+        child: ElevatedButton(
+          style: ButtonStyle(
+            elevation: MaterialStateProperty.all(70),
+            padding: MaterialStateProperty.all(
+              EdgeInsets.symmetric(horizontal: 80),
+            ),
+            backgroundColor: MaterialStateProperty.all(Colors.deepOrangeAccent),
+            overlayColor: MaterialStateProperty.all(Colors.blue),
           ),
+
+          onPressed: () {
+            showModalBottomSheet(
+              backgroundColor: const Color.fromARGB(255, 203, 10, 151),
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.only(
+                  topLeft: Radius.circular(20),
+                  topRight: Radius.circular(20),
+                ),
+              ),
+              context: context,
+              builder: (context) {
+                return Column(
+                  children: <Widget>[
+                    ListTile(
+                      title: Text('heloo'),
+                      leading: Icon(Icons.accessible_sharp),
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                    ),
+                    ListTile(
+                      title: Text('heloo'),
+                      leading: Icon(Icons.accessible_sharp),
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                    ),
+
+                    ListTile(
+                      title: Text('heloo'),
+                      leading: Icon(Icons.accessible_sharp),
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                    ),
+
+                    ListTile(
+                      title: Text('heloo'),
+                      leading: Icon(Icons.accessible_sharp),
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                    ),
+
+                    ListTile(
+                      title: Text('heloo'),
+                      leading: Icon(Icons.accessible_sharp),
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                    ),
+                    ListTile(
+                      title: Text('heloo'),
+                      leading: Icon(Icons.accessible_sharp),
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                    ),
+
+                    ListTile(
+                      title: Text('heloo'),
+                      leading: Icon(Icons.accessible_sharp),
+                      onTap: () {
+                        Navigator.of(context).pop();
+                      },
+                    ),
+                  ],
+                );
+              },
+            );
+          },
+          child: Text('Bottom Sheet'),
         ),
       ),
     );
