@@ -12,133 +12,131 @@ class _DrawerrState extends State<Drawerr> {
   Widget build(BuildContext context) {
     return Scaffold(
       drawer: Drawer(
-        child: Container(
-          child: ListView(
-            children: [
-              DrawerHeader(
-                padding: EdgeInsets.zero,
-                child: Container(
-                  padding: EdgeInsets.all(5),
-                  child: Row(
-                    children: [
-                      SizedBox(width: 10),
-                      CircleAvatar(
-                        radius: 40,
-                        backgroundImage: AssetImage('assets/images/man.webp'),
-                      ),
-                      Column(
-                        crossAxisAlignment: CrossAxisAlignment.start,
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: [
-                          Text(
-                            'Alan Varghese',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
+        child: ListView(
+          children: [
+            DrawerHeader(
+              padding: EdgeInsets.zero,
+              child: Container(
+                padding: EdgeInsets.all(5),
+                child: Row(
+                  children: [
+                    SizedBox(width: 10),
+                    CircleAvatar(
+                      radius: 40,
+                      backgroundImage: AssetImage('assets/images/man.webp'),
+                    ),
+                    Column(
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: [
+                        Text(
+                          'Alan Varghese',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
                           ),
-                          Text(
-                            'alanvz757@gmail.com',
-                            style: TextStyle(
-                              fontSize: 16,
-                              fontWeight: FontWeight.bold,
-                            ),
+                        ),
+                        Text(
+                          'alanvz757@gmail.com',
+                          style: TextStyle(
+                            fontSize: 16,
+                            fontWeight: FontWeight.bold,
                           ),
-                        ],
-                      ),
-                    ],
-                  ),
+                        ),
+                      ],
+                    ),
+                  ],
                 ),
               ),
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-
-              ListTile(
-                leading: Icon(Icons.apple_rounded),
-                title: Text('Apple Settings'),
-              ),
-            ],
-          ),
+            ),
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+        
+            ListTile(
+              leading: Icon(Icons.apple_rounded),
+              title: Text('Apple Settings'),
+            ),
+          ],
         ),
       ),
       appBar: AppBar(

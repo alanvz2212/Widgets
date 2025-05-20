@@ -14,14 +14,15 @@ class RowAndColumn extends StatelessWidget {
         width: w,
         color: const Color.fromARGB(255, 0, 0, 0),
 
-        child: Column(
-          // alignment: WrapAlignment.spaceBetween,
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          // crossAxisAlignment: CrossAxisAlignment.end,
+        child: Wrap(
+          // direction: Axis.,
+          alignment: WrapAlignment.spaceAround,
+          // mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          // // crossAxisAlignment: CrossAxisAlignment.end,
           children: [
             Container(
-              height: 100,
-              width: 100,
+              height: 180,
+              width: 350,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -35,8 +36,8 @@ class RowAndColumn extends StatelessWidget {
               ),
             ),
             Container(
-              height: 100,
-              width: 100,
+              height: 180,
+              width: 350,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -50,8 +51,8 @@ class RowAndColumn extends StatelessWidget {
               ),
             ),
             Container(
-              height: 100,
-              width: 100,
+              height: 180,
+              width: 350,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
@@ -65,8 +66,8 @@ class RowAndColumn extends StatelessWidget {
               ),
             ),
             Container(
-              height: 100,
-              width: 100,
+              height: 180,
+              width: 350,
               decoration: BoxDecoration(
                 boxShadow: [
                   BoxShadow(
