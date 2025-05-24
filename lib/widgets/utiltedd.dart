@@ -1,35 +1,40 @@
 import 'package:flutter/material.dart';
+import 'package:widgets/widgets/7.drawer.dart';
 
-class TabBarr extends StatelessWidget {
-  const TabBarr({super.key});
+class Utiltedd extends StatelessWidget {
+  const Utiltedd({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return DefaultTabController(
-      initialIndex: 2,
-      length: 5,
-      child: Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.blue,
-          title: Text('WhatsApp'),
-          bottom: TabBar(
-            // indicatorWeight: 10,
-            // indicatorColor: Colors.black,
-            tabs: [
-              Tab(icon: Icon(Icons.chat), text: 'CHATS'),
-              Tab(icon: Icon(Icons.chat_bubble), text: 'STATUS'),
-              Tab(icon: Icon(Icons.call), text: 'CALLS'),
-              Tab(icon: Icon(Icons.call), text: 'VIDEO'),
-            ],
+    return Scaffold(
+      backgroundColor: Colors.white,
+      appBar: AppBar(title: Text('Container and Sizedbox')),
+      body: Center(
+        child: GestureDetector(
+          onTap: () {
+            Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => Drawerr()),
+            );
+          },
+          child: ClipRRect(
+            borderRadius: BorderRadius.only(
+              topRight: Radius.circular(30),
+              bottomLeft: Radius.circular(40),
+            ),
+
+            child: Container(
+              height: 200,
+              width: 200,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(30),
+              ),
+              child: Image.asset(
+                'assets/images/waiting-9588284.jpg',
+                fit: BoxFit.cover,
+              ),
+            ),
           ),
-        ),
-        body: TabBarView(
-          children: [
-            Center(child: Text('CHATS')),
-            Center(child: Text('STATUS')),
-            Center(child: Text('CALLS')),
-            Center(child: Text('VIDEO')),
-          ],
         ),
       ),
     );
